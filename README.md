@@ -2,7 +2,13 @@
 
 Implementation of a small language with turtle features in D.
 
-Uses  (via [raylib-d](https://code.dlang.org/packages/raylib-d)) for graphics, and [Pegged](https://github.com/dlang-community/Pegged) for parsing.
+Uses [raylib](https://github.com/raysan5/raylib) (via [raylib-d](https://code.dlang.org/packages/raylib-d)) for graphics, and [Pegged](https://github.com/dlang-community/Pegged) for parsing.
+
+## Documentation
+
+The language docs are available here: [durtle-docs](https://durtle.benrosenberg.info)
+
+## Examples
 
 ![Sierpinski triangle](img/sierpinski.PNG)
 
