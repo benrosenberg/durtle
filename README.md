@@ -6,7 +6,7 @@ Uses [raylib](https://github.com/raysan5/raylib) (via [raylib-d](https://code.dl
 
 ## Documentation
 
-The language docs are available here: [durtle-docs](https://durtle.benrosenberg.info)
+The language docs are available here: [Durtle GitHub wiki](https://github.com/benrosenberg/durtle/wiki)
 
 ## Examples
 
