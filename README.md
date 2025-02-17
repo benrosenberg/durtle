@@ -2,7 +2,7 @@
 
 Implementation of a small language with turtle features in D.
 
-Uses [raylib](https://github.com/raysan5/raylib) for graphics, and [Pegged](https://github.com/dlang-community/Pegged) for parsing.
+Uses  (via [raylib-d](https://code.dlang.org/packages/raylib-d)) for graphics, and [Pegged](https://github.com/dlang-community/Pegged) for parsing.
 
 ![Sierpinski triangle](img/sierpinski.PNG)
 
