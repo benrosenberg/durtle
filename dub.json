@@ -1,0 +1,1 @@
+{"libs" : ["raylib"], "lflags-posix" : ["-L."], "lflags-osx" : ["-rpath", "@executable_path/"], "lflags-linux" : ["-rpath=$$ORIGIN"], "description" : "Small (turing complete?) language for Turtle commands", "dependencies" : {"raylib-d" : "~>5.5.1", "pegged" : "~>0.4.9"}, "authors" : ["xethr"], "license" : "proprietary", "name" : "durtle"}

@@ -1,0 +1,7 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"pegged": "0.4.9",
+		"raylib-d": "5.5.1"
+	}
+}

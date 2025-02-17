@@ -1,0 +1,20 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/d peg lib testing
+d peg lib testing.so
+d peg lib testing.dylib
+d peg lib testing.dll
+d peg lib testing.a
+d peg lib testing.lib
+d peg lib testing-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
+logs/
+hilbert work/
+.vscode/
+raylib*
