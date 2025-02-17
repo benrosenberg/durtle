@@ -4,43 +4,62 @@ import std.stdio;
 
 void writeHelpMessage() {
     string help_message = q"DELIM
-    "Help for durtle"
-    "---------------"
-    
-    "    Notes:"
-    "\tX can be either a positive integer or '_'."
-    "\tC is a color (any lowercase letter besides 'v')."
-    
-    "    Movement:"
-    "\t>X\tMove X units right"
-    "\t<X\tMove X units left"
-    "\t^X\tMove X units up"
-    "\tvX\tMove X units down"
-    
-    "    Pen and color:"
-    "\t.\tPen down"
-    "\t,\tPen up"
-    "\tC\tSelect color"
-    "\t!\tSet color to color at current location"
-    
-    "    Variable:"
-    "\t:X\tSet variable to X"
-    "\t+X\tAdd X to variable"
-    "\t-X\tSubtract X from variable"
-    "\t*X\tMultiply variable by X"
-    "\t/X\tDivide variable by X"
-    "\t_\tUse variable value"
-    
-    "    Control flow:"
-    "\t[...]X\tLoop X times"
-    "\t[...]C\tLoop until color C seen"
-    
-    "    Output:"
-    "\t?;\tToggle printing style (line breaks)"
-    "\t??\tPrint this help message"
-    "\t?!\tPrint the current color name"
-    "\t?_\tPrint the variable value"
-    "\t?:\tPrint the variable's ASCII character"
+Help for durtle
+---------------
+
+  Notes:
+    X is anything that evalues to a number
+    C is a color (any lowercase letter besides 'v')
+    N is a number (integer)
+    Functions cannot be defined inside a function definition
+
+  Movement and direction:
+    >X    Move X units right
+    <X    Move X units left
+    ^X    Move X units up
+    vX    Move X units down
+    |X    Add X * 90 to the angle in degrees
+
+  Pen and color:
+    .    Pen down
+    ,    Pen up
+    C    Select color
+    !    Set color to color at current location
+
+  Variable:
+    :X    Set variable to the numerical value of X
+    +X    The value of the variable plus X
+    -X    The value of the variable minus X
+    *X    The value of the variable times X
+    /X    The value of the variable divided by X
+    @X    The value of the variable raised to the power X
+    $X    The value of X raised to the power of the variable
+    %X    The value of the variable mod X
+    _     The current variable value
+
+  Control flow:
+    [...]X          Loop X times
+    [...]C          Loop until current color is C
+    ~X;...;...\     If/Then/Else with guard "variable == X"
+    ~C;...;...\     If/Then/Else with guard "current color == C"
+    ~X;...\         If/Then with guard "variable == X"
+    ~C;...\         If/Then with guard "current color == C"
+
+  Output:
+    ?;    Toggle printing style (line breaks)
+    ??    Print this help message
+    ?!    Print the current color name
+    ?_    Print the variable value
+    ?:    Print the variable's ASCII character
+    ?|    Print the current heading as a multiple of 90 degrees
+
+  Functions:
+    (...)N    Define a function with ID N
+    {CX}N     Call function N with parameters C and X
+
+  Miscellaneous:
+    `     Begin/end a comment
+
 DELIM";
     writeln(help_message);
 }
