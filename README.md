@@ -33,3 +33,15 @@ The language docs are available here: [Durtle GitHub wiki](https://github.com/be
 ```
 `hilbert curve` (~0;_;~a;|1;|3\~a;{r-1}1;{a-1}1\^2~a;|3;|1\~a;{a-1}1;{r-1}1\^2~a;{a-1}1;{r-1}1\~a;|3;|1\^2~a;{r-1}1;{a-1}1\~a;|1;|3\\)1.{a8}1
 ```
+
+![Dragon curve](img/dragon.PNG)
+
+```
+`dragon curve` (~0;^2;{a-1}1|1{r-1}2\)1 (~0;^2;{a-1}1|3{r-1}2\)2 .{a12}1
+```
+
+![C-curve](img/ccurve.PNG)
+
+```
+`c-curve` (~0;^2;{a-1}1|1{a-1}1|3\)1.{a13}1
+```
