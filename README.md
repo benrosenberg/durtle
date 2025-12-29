@@ -4,6 +4,8 @@ Implementation of a small language with turtle features in D.
 
 Uses [raylib](https://github.com/raysan5/raylib) (via [raylib-d](https://code.dlang.org/packages/raylib-d)) for graphics, and [Pegged](https://github.com/dlang-community/Pegged) for parsing.
 
+Durtle is Turing-complete, as it can simulate [Langton's Ant](https://en.wikipedia.org/wiki/Langton%27s_ant) (see below for a screenshot matching the Wikipedia article).
+
 ## Documentation
 
 The language docs are available here: [Durtle GitHub wiki](https://github.com/benrosenberg/durtle/wiki)
@@ -44,4 +46,10 @@ The language docs are available here: [Durtle GitHub wiki](https://github.com/be
 
 ```
 `c-curve` (~0;^2;{a-1}1|1{a-1}1|3\)1.{a13}1
+```
+
+![Langton's ant](img/langtonant.PNG)
+
+```
+`langton's ant` |2 [! ~w; |3 b ., >1 ; |1 w ., >1 \]11000
 ```
